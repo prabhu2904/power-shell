@@ -51,7 +51,7 @@ systemctl start rabbitmq-server  &>> $LOGFILE
 VALIDATE $? "Starting rabbitmq server"
 
 rabbitmqctl add_user roboshop roboshop123 &>> $LOGFILE
-if [ id -ne 0 ]
+if [ $id -ne 0 ]
 then 
    echo "skipping roboshop user"
 else
