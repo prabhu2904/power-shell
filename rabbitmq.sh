@@ -55,7 +55,8 @@ if [ id -ne 0 ]
 then 
    echo "skipping roboshop user"
 else
-   echo "create roboshop user"   
+   echo "create roboshop user"
+fi    
 
 VALIDATE $? "creating user"
 
